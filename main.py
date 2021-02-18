@@ -15,12 +15,12 @@ import exp
 #
 
 #
-# ``exp.random_exp(47,5,three_itv_qsort)'' returns
+# ``exp.random_exp(23,5,three_itv_qsort)'' returns
 # the average number of flips when we run
 # three-interval quicksort
-# for 5 random permutations of n=47 elements.
+# for 5 random permutations of n=23 elements.
 #
-exp.random_exp(47,5,three_itv_qsort)
+exp.random_exp(23,5,three_itv_qsort)
 #
 
 #
@@ -37,12 +37,12 @@ exp.random_exp(47,5,three_itv_qsort)
 #
 
 #
-# ``exp.random_exp(47,5,four_itv_qsort)'' returns
+# ``exp.random_exp(23,5,four_itv_qsort)'' returns
 # the average number of flips when we run
 # four-interval quicksort
-# for 5 random permutations of n=47 elements.
+# for 5 random permutations of n=23 elements.
 #
-#exp.random_exp(47,5,four_itv_qsort)
+#exp.random_exp(23,5,four_itv_qsort)
 #
 
 #
@@ -59,12 +59,12 @@ exp.random_exp(47,5,three_itv_qsort)
 #
 
 #
-# ``exp.random_exp(47,5,five_itv_qsort)'' returns
+# ``exp.random_exp(23,5,five_itv_qsort)'' returns
 # the average number of flips when we run
 # five-interval quicksort
-# for 5 random permutations of n=47 elements.
+# for 5 random permutations of n=23 elements.
 #
-#exp.random_exp(47,5,five_itv_qsort)
+#exp.random_exp(23,5,five_itv_qsort)
 #
 
 #
