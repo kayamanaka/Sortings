@@ -5,13 +5,13 @@
 main.py is the main program file.
 To run the programs, execute main.py using python command.
 
-'''
+```
 % python main.py
-'''
+```
 
-Then, output is as follows.
+Then, you will get the following output.
 
-'''
+```
 permutation, number of reversals
 [36, 2, 37, 12, 21, 32, 35, 11, 22, 47, 15, 19, 4, 42, 33, 38, 24, 9, 34, 6, 46, 5, 28, 26, 39, 43, 45, 29, 17, 18, 1, 40, 27, 30, 25, 16, 44, 8, 7, 14, 41, 23, 20, 3, 10, 13, 31], 5608
 [28, 23, 47, 42, 13, 19, 17, 5, 40, 39, 37, 34, 33, 41, 43, 32, 22, 38, 36, 4, 15, 44, 24, 46, 26, 3, 14, 25, 45, 12, 16, 29, 21, 9, 7, 31, 35, 18, 10, 6, 30, 11, 27, 8, 1, 2, 20], 5970
@@ -22,11 +22,11 @@ permutation, number of reversals
 5 trials,
 Sorting algo: <function three_itv_qsort at 0x1091c79d0>
 Average num_reversals: 5954.4
-'''
+```
 
 The above output is the result when we execute three-interval quicksort for 5 random permutations of n=47 elements.
-The first list [36, 2, ...] is a randomly generated permutation.
-The second list [28, 23, ...] is ..., and so on.
-The last line represents the average number of flips.
+The first list `[36, 2, ...]` is a randomly generated permutation.
+The second list `[28, 23, ...]` is also randomly generated permutation, and so on.
+The last line represents the average number of flips for sorting 5 permutations.
 
 
