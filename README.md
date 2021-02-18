@@ -29,4 +29,25 @@ The first list `[36, 2, ...]` is a randomly generated permutation.
 The second list `[28, 23, ...]` is also randomly generated permutation, and so on.
 The last line represents the average number of flips for sorting 5 permutations.
 
+In this repository, we prepared two methods for measuring average number of flips:
+(1) for randomly generated permutations and (2) for all the permutations.
+
+If you run the program in a different way, you have to edit main.py.
+The details for editting are shown below.
+
+# Sorting permutations generated uniformly at random
+
+You can use the method `exp.random_exp(n,k,alg)`.
+Here, n is the number of elements, k is the number of permutations generated uniformly at random, and alg is a sorting algorithm, which is one of `three_itv_qsort`, `four_itv_qsort`, and `five_itv_qsort`.
+
+- `three_itv_qsort`: Quicksort using 3 intervals
+- `four_itv_qsort`: Quicksort using 4 intervals
+- `five_itv_qsort`: Quicksort using 5 intervals
+
+
+# Sorting all the permutations of n elements
+
+aaa
+
+
 
