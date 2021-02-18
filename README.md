@@ -37,19 +37,22 @@ The details for editting are shown below.
 
 # Sorting permutations generated uniformly at random
 
-You can use the method `exp.random_exp(n,k,alg)` which returns the average number of flips for `k` generated permutations of `n` elements by the sorting algorithm designated in the 3rd argument `alg`
+You can use the method `exp.random_exp(n,k,alg)` which returns the average number of flips for `k` generated permutations of `n` elements by the sorting algorithm designated in the last argument `alg`
 You can choose one sorting algorithm from the following three algorithms:
 
 - `three_itv_qsort`: Quicksort using 3 intervals
 - `four_itv_qsort`: Quicksort using 4 intervals
 - `five_itv_qsort`: Quicksort using 5 intervals
 
-If you insert a call of the method, for example, `exp.random_exp(5,100,five_itv_qsort)`, in main.py,
+If you insert a call of the method, for example, `exp.random_exp(5,100,five_itv_qsort)`, in main.py, and execute `main.py`,
+then you will see the average number of flips.
 
 # Sorting all the permutations of n elements
 
-You can use the method `exp.random_exp(n,k,alg)` which returns the average number of flips for `k` generated permutations of `n` elements by the sorting algorithm designated in the 3rd argument `alg`
-You can choose one sorting algorithm from the following three algorithms:
+You can use the method `exp.all_exp(n,alg)` which returns the average number of flips for all the permutations of `n` elements by the sorting algorithm designated in the last argument `alg`
+You can choose one sorting algorithm from the three algorithms shown in above.
 
+If you insert a call of the method, for example, `exp.all_exp(5,100,five_itv_qsort)`, in main.py, and execute `main.py`,
+then you will see the average number of flips.
 
 
