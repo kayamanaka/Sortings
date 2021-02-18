@@ -37,17 +37,19 @@ The details for editting are shown below.
 
 # Sorting permutations generated uniformly at random
 
-You can use the method `exp.random_exp(n,k,alg)`.
-Here, n is the number of elements, k is the number of permutations generated uniformly at random, and alg is a sorting algorithm, which is one of `three_itv_qsort`, `four_itv_qsort`, and `five_itv_qsort`.
+You can use the method `exp.random_exp(n,k,alg)` which returns the average number of flips for `k` generated permutations of `n` elements by the sorting algorithm designated in the 3rd argument `alg`
+You can choose one sorting algorithm from the following three algorithms:
 
 - `three_itv_qsort`: Quicksort using 3 intervals
 - `four_itv_qsort`: Quicksort using 4 intervals
 - `five_itv_qsort`: Quicksort using 5 intervals
 
+If you insert a call of the method, for example, `exp.random_exp(5,100,five_itv_qsort)`, in main.py,
 
 # Sorting all the permutations of n elements
 
-aaa
+You can use the method `exp.random_exp(n,k,alg)` which returns the average number of flips for `k` generated permutations of `n` elements by the sorting algorithm designated in the 3rd argument `alg`
+You can choose one sorting algorithm from the following three algorithms:
 
 
 
