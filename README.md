@@ -1,6 +1,7 @@
 # Sortings
 
 ## Usage
+### Run sample program
 
 main.py is the main program file.
 To run the programs, execute main.py using python command.
@@ -36,7 +37,7 @@ In this repository, we prepared two methods for measuring average number of flip
 If you run the program in a different way, you have to edit main.py.
 The details for editting are shown below.
 
-# Sorting permutations generated uniformly at random
+### Sorting permutations generated uniformly at random
 
 You can use the method `exp.random_exp(n,k,alg)` which returns the average number of flips for `k` generated permutations of `n` elements by the sorting algorithm designated in the last argument `alg`
 You can choose one sorting algorithm from the following three algorithms:
@@ -49,12 +50,14 @@ If you insert a call of the method, for example, `exp.random_exp(5,100,five_itv_
 then you will see the average number of flips with all the generated permutations.
 More precisely, first each generated permutation and its number of flips to sort it is output, and the average number of flips with additional information are output.
 
-# Sorting all the permutations of n elements
+### Sorting all the permutations of n elements
 
 You can use the method `exp.all_exp(n,alg)` which returns the average number of flips for all the permutations of `n` elements by the sorting algorithm designated in the last argument `alg`
 You can choose one sorting algorithm from the three algorithms shown in above.
 
 If you insert a call of the method, for example, `exp.all_exp(5,100,five_itv_qsort)`, in main.py, and execute `main.py`,
 then you will see the average number of flips.
+
+## References
 
 [BS03] Douglas W. Bass and I.Hal Sudborough, Pancake problems with restricted prefix reversals and some corresponding Cayley networks, Journal of Parallel and Distributed Computing, vol.63, no.3, pp.327-336, March 2003.
