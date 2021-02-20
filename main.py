@@ -16,7 +16,7 @@ import exp
 
 #
 # ``exp.random_exp(23,5,three_itv_qsort)'' returns
-# the average number of flips when we run
+# the average, max, min numbers of flips when we run
 # three-interval quicksort
 # for 5 random permutations of n=23 elements.
 #
@@ -25,7 +25,7 @@ exp.random_exp(23,5,three_itv_qsort)
 
 #
 # ``exp.all_exp(7,three_itv_qsort)'' returns
-# the average number of flips when we run
+# the average, max, min numbers of flips when we run
 # three-interval quicksort
 # for all the permutations of n=7 elements.
 #
@@ -38,7 +38,7 @@ exp.random_exp(23,5,three_itv_qsort)
 
 #
 # ``exp.random_exp(23,5,four_itv_qsort)'' returns
-# the average number of flips when we run
+# the average, min, max numbers of flips when we run
 # four-interval quicksort
 # for 5 random permutations of n=23 elements.
 #
@@ -47,7 +47,7 @@ exp.random_exp(23,5,three_itv_qsort)
 
 #
 # ``exp.all_exp(7,four_itv_qsort)'' returns
-# the average number of flips when we run
+# the average, max, min numbers of flips when we run
 # four-interval quicksort
 # for all the permutations of n=7 elements.
 #
@@ -60,7 +60,7 @@ exp.random_exp(23,5,three_itv_qsort)
 
 #
 # ``exp.random_exp(23,5,five_itv_qsort)'' returns
-# the average number of flips when we run
+# the average, max, min numbers of flips when we run
 # five-interval quicksort
 # for 5 random permutations of n=23 elements.
 #
@@ -69,9 +69,23 @@ exp.random_exp(23,5,three_itv_qsort)
 
 #
 # ``exp.all_exp(7,five_itv_qsort)'' returns
-# the average number of flips when we run
+# the average, max, min numbers of flips when we run
 # five-interval quicksort
 # for all the permutations of n=7 elements.
 #
 #exp.all_exp(7,five_itv_qsort)
+#
+
+
+#
+# Run all algorithms
+#
+
+#
+# ``exp.random_exp_allalgos(23, 100)'' returns
+# the average, max, min numbers of flips when we run
+# {three, four, five)-interval quicksorts
+# for 5 random permutations of n=23 elements.
+#
+#exp.random_exp_allalgos(23, 5)
 #
