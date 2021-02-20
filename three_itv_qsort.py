@@ -210,13 +210,9 @@ def three_itv_qsort(lst):
     center_idx_floor = math.floor((n/2) -1)
 
     round = 0
-    #while len(intervals) < math.ceil(n/2) + 3:
     while is_only_size_atmost_two_intervals(intervals) == False:
         round = round +1
-        #print(f'***** The {round}th round starts.*****')
         for i in range(n):
-            #print(f'In the head of {i}th for loop \n   a: {a}')
-            #print(f'   Intervals: {intervals}')
             center_interval = find_interval(a[center_idx_ceil])
             #print(f'center_inteval: {center_interval}')
             if get_center_elem(center_interval) == get_center_elem(a) and len(center_interval) > 2:
