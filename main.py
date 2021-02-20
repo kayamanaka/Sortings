@@ -64,7 +64,7 @@ exp.random_exp(23,5,three_itv_qsort)
 # five-interval quicksort
 # for 5 random permutations of n=23 elements.
 #
-#exp.random_exp(23,5,five_itv_qsort)
+#exp.random_exp(23,500,five_itv_qsort)
 #
 
 #

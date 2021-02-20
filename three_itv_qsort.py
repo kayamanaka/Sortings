@@ -190,6 +190,16 @@ def print_intervals():
             print(f'{curr_itv},',end='')
     print('')    
 
+def is_only_size_atmost_two_intervals(itvs):
+    # itvs: list of intervals
+    if itvs == []:
+        return False
+    else:
+        for itv in itvs:
+            if len(itv) > 2:
+                return False
+    return True
+
 def three_itv_qsort(lst):
     global a,n,intervals,center_idx_ceil, center_idx_floor
     a = lst
@@ -200,7 +210,8 @@ def three_itv_qsort(lst):
     center_idx_floor = math.floor((n/2) -1)
 
     round = 0
-    while len(intervals) < math.ceil(n/2):
+    #while len(intervals) < math.ceil(n/2) + 3:
+    while is_only_size_atmost_two_intervals(intervals) == False:
         round = round +1
         #print(f'***** The {round}th round starts.*****')
         for i in range(n):

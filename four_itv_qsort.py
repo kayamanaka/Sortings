@@ -161,8 +161,9 @@ def four_itv_partition(p,q,r):
                 L_1_ceilH_1(a)  # 10)
 
             for i in range(num_largers - len(largers)):
-                R_ceilH_n_1(a)  # 11)
-                R_floorH_ceilHadd1_1(a)  # 12)
+                #R_ceilH_n_1(a)  # 11)
+                #R_floorH_ceilHadd1_1(a)  # 12)
+                R_ceilHadd1_n_1(a)
 
 
 def find_block(min_elem, max_elem):
@@ -215,6 +216,15 @@ def print_intervals():
             print(f'{curr_itv},',end='')
     print('')    
 
+def is_only_size_one_intervals(itvs):
+    if itvs == []:
+        return False
+    else:
+        for itv in itvs:
+            if len(itv) > 1:
+                return False
+    return True
+    
 def four_itv_qsort(lst):
     global a,n,intervals,center_idx_ceil, center_idx_floor
     a = lst
