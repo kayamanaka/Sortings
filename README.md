@@ -41,12 +41,13 @@ The details for editting are shown below.
 You can use the method `exp.random_exp(n,k,alg)` which returns the average number of flips for `k` generated permutations of `n` elements by the sorting algorithm designated in the last argument `alg`
 You can choose one sorting algorithm from the following three algorithms:
 
-- `three_itv_qsort`: Quicksort using 3 intervals
-- `four_itv_qsort`: Quicksort using 4 intervals
-- `five_itv_qsort`: Quicksort using 5 intervals
+- `three_itv_qsort`: Quicksort using 3 intervals. This program is an implementation of the algorithm in [BS03]. Their algorithm works when n is odd, n mod 4 \neq 1, and (n >= 13 and n mod 8 \neq 5).
+- `four_itv_qsort`: Quicksort using 4 intervals. This program works when n is odd.
+- `five_itv_qsort`: Quicksort using 5 intervals. This program works for any positive integer n.
 
-If you insert a call of the method, for example, `exp.random_exp(5,100,five_itv_qsort)`, in main.py, and execute `main.py`,
-then you will see the average number of flips.
+If you insert a call of the method, for example, `exp.random_exp(5,100,five_itv_qsort)`, in main.py, and execute `python main.py` on your terminal,
+then you will see the average number of flips with all the generated permutations.
+More precisely, first each generated permutation and its number of flips to sort it is output, and the average number of flips with additional information are output.
 
 # Sorting all the permutations of n elements
 
@@ -56,4 +57,4 @@ You can choose one sorting algorithm from the three algorithms shown in above.
 If you insert a call of the method, for example, `exp.all_exp(5,100,five_itv_qsort)`, in main.py, and execute `main.py`,
 then you will see the average number of flips.
 
-
+[BS03] Douglas W. Bass and I.Hal Sudborough, Pancake problems with restricted prefix reversals and some corresponding Cayley networks, Journal of Parallel and Distributed Computing, vol.63, no.3, pp.327-336, March 2003.
