@@ -45,7 +45,8 @@ The details for editting are shown below.
 You can use the method `exp.random_exp(n,k,alg)` which returns the average, maximum, and minimum numbers of flips for `k` generated permutations of `n` elements by the sorting algorithm designated in the last argument `alg`
 You can choose one sorting algorithm from the following three algorithms:
 
-- `three_itv_qsort`: Quicksort using 3 intervals. This program is an implementation of the algorithm in [BS03]. Their algorithm works when n is odd, n mod 4 \neq 1, and (n >= 13 and n mod 8 \neq 5).
+- `three_itv_qsort`: Quicksort using 3 intervals. This program is an implementation of the algorithm in [BS03]. Their algorithm works when n mod 4 = 3 or n = 5.
+<!-- when n is odd, n mod 4 \neq 1, and (n >= 13 and n mod 8 \neq 5). -->
 - `four_itv_qsort`: Quicksort using 4 intervals. This program works when n is odd.
 - `five_itv_qsort`: Quicksort using 5 intervals. This program works for any positive integer n.
 
